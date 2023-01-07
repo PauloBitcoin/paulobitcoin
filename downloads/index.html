@@ -14,7 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-
+    <script src="js/jquery-3.6.2.min.js"></script>
 
 </head>
 
@@ -56,339 +56,6 @@
         margin: 15px 0 15px 0;
         border-radius: 5px;
         outline: none;
-    }
-
-    hr.hr-sep {
-        width: 80%;
-        border-radius: 50%;
-        margin: 0 auto;
-    }
-
-    #myBtnContainer {
-        margin-top: 15px;
-        letter-spacing: 5px;
-    }
-
-    /* Style the buttons */
-    #myUL {
-        padding-top: 15px;
-        width: auto;
-        background: rgba(214, 214, 214, 0.288);
-    }
-
-    #myUL li a {
-        -moz-transition: all 0.35s ease;
-        -ms-transition: all 0.35s ease;
-        -o-transition: all 0.35s ease;
-        -webkit-transition: all 0.35s ease;
-        border: 1px solid lightgrey;
-        margin-top: -1px;
-        padding: 10px 0px 10px 0px;
-        margin: 0;
-        text-decoration: none;
-        font-size: 16px;
-        color: #565555;
-        display: block;
-        border-radius: 3px;
-    }
-
-    #myUL li a:hover:not(.header) {
-        background-color: #e4ecf9;
-        border: 1px solid grey;
-    }
-
-    .filterDiv {
-        display: none;
-        /* Hidden by default */
-        transition: all 0.3s;
-        margin-bottom: 4px;
-    }
-
-    .show {
-        display: block;
-    }
-
-    .accordion-thumb {
-        font-weight: bold;
-        background: white;
-    }
-
-    /* Active answer */
-    .filterDiv.is-active .accordion-thumb::before {
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-
-    .accordion-thumb::before {
-        content: '';
-        display: inline-block;
-        height: 7px;
-        width: 7px;
-        margin-right: 1rem;
-        margin-left: .5rem;
-        vertical-align: middle;
-        border-right: 1px solid;
-        border-bottom: 1px solid;
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        transition: -webkit-transform .2s ease-out;
-        transition: transform .2s ease-out;
-        transition: transform .2s ease-out, -webkit-transform .2s ease-out;
-    }
-
-    .accordion-panel {
-        margin: 0 0 0 3%;
-        padding: 10px 20px 10px 20px;
-        display: none;
-        color: black;
-        font-size: 14px;
-        font-weight: normal;
-        border-radius: 3px;
-        background: white;
-    }
-</style>
-
-
-<body>
-
-
-
-
-
-
-
-
-    <div class="master-box">
-
-        <div class="faq-header">
-            <h1 class="title d-inline-block mb-2 mt-4 fw-bold"> @PauloBitcoin</h1>
-            <h4 class="subtitle fw-bolder">Página de Downloads</h4>
-            <div class="filter-search">
-                <i class="fa fa-search"></i>
-                <input type="text" id="searchItem" onkeyup="searchFunction()" placeholder="Buscar...">
-                <hr class="hr-sep">
-                <div id="myBtnContainer">
-                    <button class="btn mb-2 btn-info active" onclick="filterSelection('all')"> Todos</button>
-                    <button class="btn mb-2 btn-info" onclick="filterSelection('forms')">Formulários</button>
-                    <button class="btn mb-2 btn-info" onclick="filterSelection('outros')">Outros</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-4 mx-auto">
-            <div class="alert alert-primary alert-dismissible py-2 mb-4 fade show" role="alert" id="Alert">
-                <strong>Baixe vídeos do TikTok</strong> sem marca d'água e sem anúncios.
-                <a href="https://www.ttkapp.tk/" class="ms-1 btn btn-sm btn-danger">Conheça!</a>
-                <a class="btn-sm btn-close p-3" data-bs-dismiss="alert" aria-label="Close" onclick="removeALert()"></a>
-            </div>
-
-            <script>
-                function removeALert() {
-                    var element = document.getElementById("Alert");
-                    element.classList.add("hidden");
-                }
-            </script>
-        </div>
-
-        <div id="myUL" class="row mx-auto">
-
-            <h4 class="subtitle fw-bolder">Página de Downloads</h4>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-3 filterDiv forms downloads">
-                <div class="card rounded-3 border-0 shadow">
-                    <img src="img/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Formulário Spreadsheets.</h5>
-                        <p class="card-text">Formulário de contato Google Spreadsheets.</p>
-                        <a href="https://github.com/PauloBitcoin/Form-Spreadsheet/archive/refs/heads/main.zip"
-                            class="btn btn-primary me-1 mb-1">Download</a>
-                        <a href="https://youtu.be/EFpSr8Q0dBc" class="btn btn-danger mb-1">Tutorial</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-3 filterDiv forms downloads">
-                <div class="card rounded-3 border-0 shadow">
-                    <img src="img/2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Formulário Telegram.</h5>
-                        <p class="card-text">Formulário de contato Telegram.</p>
-
-                        <a href="https://github.com/PauloBitcoin/form-Telegram/archive/refs/heads/main.zip"
-                            class="btn btn-primary me-1 mb-1">Download</a>
-                        <a href="https://www.youtube.com/@paulobitcoin" class="btn btn-danger mb-1">Tutorial</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-3 filterDiv forms downloads">
-                <div class="card rounded-3 border-0 shadow">
-                    <img src="img/2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Teste.</h5>
-                        <p class="card-text">Veremos.</p>
-
-                        <a href="https://github.com/PauloBitcoin/form-Telegram/archive/refs/heads/main.zip"
-                            class="btn btn-primary me-1 mb-1">Download</a>
-                        <a href="https://www.youtube.com/@paulobitcoin" class="btn btn-danger mb-1">Tutorial</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-    <script src="js/jquery.min.js"></script>
-    <!--ALERTS-->
-    <script src="js/sweetalert2.all.min.js"></script>
-
-    <script>
-        $('#searchItem').keyup(function () {
-            var value = $(this).val().toLowerCase();
-            $('div .downloads').each(function () {
-                var lcval = $(this).text().toLowerCase();
-                if (lcval.indexOf(value) > -1) {
-                    $(this).show();
-                } else {
-                    $(this).hide();
-                }
-            });
-        });
-
-        filterSelection("all")
-        function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filterDiv");
-            if (c == "all") c = "";
-            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-            for (i = 0; i < x.length; i++) {
-                faqRemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) faqAddClass(x[i], "show");
-            }
-        }
-
-        // Show filtered elements
-        function faqAddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {
-                    element.className += " " + arr2[i];
-                }
-            }
-        }
-
-        // Hide elements that are not selected
-        function faqRemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
-                }
-            }
-            element.className = arr1.join(" ");
-        }
-
-
-
-    </script>
-
-
-
-    <script>
-
-
-
-        function buscarProdutos(e, txt, page, callback) {
-
-
-
-
-            $('#DownCards div').each(function () {
-
-            });
-
-            if (items.length > 0) {
-                $('.card').html(items.join(' '));
-            } else {
-                $('.card ').html('<div style="padding-top:100px;width:100%;float:left;text-align:center;color:#666;"><p>Nenhum item encontrado.</p></div>');
-
-            }
-
-        }
-
-    </script>
-
-
-
-</body>
-
-=======
-<!DOCTYPE html>
-<html lang="pt">
-
-<head>
-    <title>Downloads</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <!--STYLE-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <script src="js/jquery.min.js"></script>
-
-</head>
-
-<style>
-    .master-box {
-        margin: 40px 0;
-        padding: 0 5%;
-    }
-
-    .faq-header {
-        background: #303f94;
-        background: #303f94;
-        background: -webkit-linear-gradient(to right, #303f94, #4b558a);
-        background: linear-gradient(to right, #303f94, #4b558a);
-        padding: 0 0 10px 0;
-        text-align: center;
-        border-radius: 1px;
-        color: white;
-    }
-
-    h1.title {
-        font-size: 1.8em;
-        margin-bottom: 40px;
-        letter-spacing: 0px;
-        font-weight: 400;
-    }
-
-    h4.subtitle {
-        font-weight: 200;
-        font-size: 1em;
-
-    }
-
-    #searchItem {
-        width: 50%;
-        font-size: 18px;
-        padding: 5px 20px 5px 20px;
-        border: 1px solid #ddd;
-        margin: 15px 0 15px 0;
-        border-radius: 5px;
     }
 
     hr.hr-sep {
@@ -499,11 +166,11 @@
             <h4 class="subtitle fw-bolder">Página de Downloads</h4>
             <div class="filter-search">
                 <i class="fa fa-search"></i>
-                <input type="text" id="searchItem" onkeyup="searchFunction()" placeholder="Search">
+                <input type="text" id="searchItem" placeholder="Search">
                 <hr class="hr-sep">
                 <div id="myBtnContainer">
                     <button class="btn mb-2 btn-success active" onclick="filterSelection('all')"> Todos</button>
-                    <button class="btn mb-2 btn-success" onclick="filterSelection('account')">Account</button>
+                    <button class="btn mb-2 btn-success" onclick="filterSelection('forms')">Formulários</button>
                     <button class="btn mb-2 btn-success" onclick="filterSelection('orders')">Orders</button>
                     <button class="btn mb-2 btn-success" onclick="filterSelection('bugs')">Bugs</button>
                     <button class="btn mb-2 btn-success" onclick="filterSelection('promotions')">Promotions</button>
@@ -526,12 +193,12 @@
             </script>
         </div>
 
-        <div id="myUL" class="row">
+        <div id="myItems" class="row">
 
 
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-3 filterDiv account">
-                <div class="card rounded-3 border-0 shadow downloads">
-                    <img src="img/1.jpg" class="card-img-top" alt="...">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-3 filterDiv forms downloads">
+                <div class="card rounded-3 border-0 shadow">
+                    <img src="img/1.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Formulário Spreadsheets.</h5>
                         <p class="card-text">Formulário de contato Google Spreadsheets.</p>
@@ -542,9 +209,9 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-3  filterDiv forms downloads">
                 <div class="card rounded-3 border-0 shadow">
-                    <img src="img/2.jpg" class="card-img-top" alt="...">
+                    <img src="img/1.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Formulário Telegram.</h5>
                         <p class="card-text">Formulário de contato Telegram.</p>
@@ -565,41 +232,38 @@
 
 
 
-
+    
     <!--ALERTS-->
     <script src="js/sweetalert2.all.min.js"></script>
 
     <script>
 
-        function _removeAcento(text) {
-            text = text.toUpperCase();
-            text = text.replace(new RegExp('[ÁÀÂÃ]', 'gi'), 'a');
-            text = text.replace(new RegExp('[ÉÈÊ]', 'gi'), 'e');
-            text = text.replace(new RegExp('[ÍÌÎ]', 'gi'), 'i');
-            text = text.replace(new RegExp('[ÓÒÔÕ]', 'gi'), 'o');
-            text = text.replace(new RegExp('[ÚÙÛ]', 'gi'), 'u');
-            text = text.replace(new RegExp('[Ç]', 'gi'), 'c');
-            return text;
-        }
 
 
-        $('#searchItem').keyup(function (e, txt, page, callback) {
-            var items = [];
-
+        $('#searchItem').keyup(function () {
             var value = $(this).val().toLowerCase();
-            $('.downloads').each(function () {
+            $('#myItems div').each(function () {
                 var lcval = $(this).text().toLowerCase();
                 if (lcval.indexOf(value) > -1) {
                     $(this).show();
                 } else {
                     $(this).hide();
-                };
-                if (_removeAcento($(this).text()).toUpperCase().search(_removeAcento(txt).toUpperCase()) != -1) {
-
-                    items.push($(this).parent().html());
                 }
             });
         });
+
+
+        $(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+
+
 
 
         filterSelection("all")
@@ -645,16 +309,7 @@
 
 
 
-    <script>
-
-
-
-
-    </script>
-
-
-
 </body>
 
->>>>>>> 68583ae145615f89d083bdcc052a7eb83e430676
+
 </html>
