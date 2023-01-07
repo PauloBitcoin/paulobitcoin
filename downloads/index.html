@@ -152,13 +152,6 @@
 
 <body>
 
-
-
-
-
-
-
-
     <div class="master-box">
 
         <div class="faq-header">
@@ -171,9 +164,7 @@
                 <div id="myBtnContainer">
                     <button class="btn mb-2 btn-success active" onclick="filterSelection('all')"> Todos</button>
                     <button class="btn mb-2 btn-success" onclick="filterSelection('forms')">Formulários</button>
-                    <button class="btn mb-2 btn-success" onclick="filterSelection('orders')">Orders</button>
-                    <button class="btn mb-2 btn-success" onclick="filterSelection('bugs')">Bugs</button>
-                    <button class="btn mb-2 btn-success" onclick="filterSelection('promotions')">Promotions</button>
+                    <button class="btn mb-2 btn-success" onclick="filterSelection('others')">Outros</button>
                 </div>
             </div>
         </div>
@@ -181,7 +172,7 @@
         <div class="row mt-4 mx-auto">
             <div class="alert alert-primary alert-dismissible py-2 mb-4 fade show" role="alert" id="Alert">
                 <strong>Baixe vídeos do TikTok</strong> sem marca d'água e sem anúncios.
-                <a href="./" class="ms-1 btn btn-sm btn-danger">Conheça!</a>
+                <a href="https://www.ttkapp.tk/" class="ms-1 btn btn-sm btn-danger">Conheça!</a>
                 <a class="btn-sm btn-close p-3" data-bs-dismiss="alert" aria-label="Close" onclick="removeALert()"></a>
             </div>
 
@@ -232,7 +223,7 @@
 
 
 
-    
+
     <!--ALERTS-->
     <script src="js/sweetalert2.all.min.js"></script>
 
@@ -253,14 +244,14 @@
         });
 
 
-        $(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myTable tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
 
 
 
