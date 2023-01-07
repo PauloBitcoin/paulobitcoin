@@ -19,10 +19,6 @@
 </head>
 
 <style>
-    .master-box {
-        margin: 40px 0;
-        padding: 0 5%;
-    }
 
     .down-header {
         background: #303f94;
@@ -77,26 +73,6 @@
         background: rgba(255, 255, 255, 0.01);
     }
 
-    #myUL li a {
-        -moz-transition: all 0.35s ease;
-        -ms-transition: all 0.35s ease;
-        -o-transition: all 0.35s ease;
-        -webkit-transition: all 0.35s ease;
-        border: 1px solid lightgrey;
-        margin-top: -1px;
-        padding: 10px 0px 10px 0px;
-        margin: 0;
-        text-decoration: none;
-        font-size: 16px;
-        color: #565555;
-        display: block;
-        border-radius: 3px;
-    }
-
-    #myUL li a:hover:not(.header) {
-        background-color: #e4ecf9;
-        border: 1px solid grey;
-    }
 
     .filterDiv {
         display: none;
@@ -109,50 +85,13 @@
         display: block;
     }
 
-    .accordion-thumb {
-        font-weight: bold;
-        background: white;
-    }
 
-    /* Active answer */
-    .filterDiv.is-active .accordion-thumb::before {
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-
-    .accordion-thumb::before {
-        content: '';
-        display: inline-block;
-        height: 7px;
-        width: 7px;
-        margin-right: 1rem;
-        margin-left: .5rem;
-        vertical-align: middle;
-        border-right: 1px solid;
-        border-bottom: 1px solid;
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        transition: -webkit-transform .2s ease-out;
-        transition: transform .2s ease-out;
-        transition: transform .2s ease-out, -webkit-transform .2s ease-out;
-    }
-
-    .accordion-panel {
-        margin: 0 0 0 3%;
-        padding: 10px 20px 10px 20px;
-        display: none;
-        color: black;
-        font-size: 14px;
-        font-weight: normal;
-        border-radius: 3px;
-        background: white;
-    }
 </style>
 
 
 <body>
 
-    <div class="master-box">
+    <div class="container">
 
         <div class="down-header">
             <h1 class="title d-inline-block mb-2 mt-4 fw-bold"> @PauloBitcoin</h1>
@@ -169,7 +108,7 @@
             </div>
         </div>
 
-        <div class="row mt-4 mx-auto">
+        <div class="pub text-center mt-4 mx-auto">
             <div class="alert alert-primary alert-dismissible py-2 mb-4 fade show" role="alert" id="Alert">
                 <strong>Baixe vídeos do TikTok</strong> sem marca d'água e sem anúncios.
                 <a href="https://www.ttkapp.tk/" class="ms-1 btn btn-sm btn-danger">Conheça!</a>
