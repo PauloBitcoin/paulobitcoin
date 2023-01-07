@@ -19,7 +19,6 @@
 </head>
 
 <style>
-
     .down-header {
         background: #303f94;
         background: #303f94;
@@ -85,7 +84,16 @@
         display: block;
     }
 
-
+    .btn-close {
+        float: right;
+        position: absolute;
+        display: block;
+        font-size: 25px;
+        right: 0;
+        top: 0;
+        padding: 0 7px !important;
+    }
+    
 </style>
 
 
@@ -109,10 +117,11 @@
         </div>
 
         <div class="pub text-center mt-4 mx-auto">
-            <div class="alert alert-primary alert-dismissible py-2 mb-4 fade show" role="alert" id="Alert">
+            <div class="alert alert-primary alert-dismissible align-items-center py-2 mb-4 fade show" role="alert" id="Alert">
                 <strong>Baixe vídeos do TikTok</strong> sem marca d'água e sem anúncios.
                 <a href="https://www.ttkapp.tk/" class="ms-1 btn btn-sm btn-danger">Conheça!</a>
-                <a class="btn-sm btn-close p-3" data-bs-dismiss="alert" aria-label="Close" onclick="removeALert()"></a>
+                <a class="btn-sm btn-close p-3" data-bs-dismiss="alert" aria-label="Close"
+                    onclick="removeALert()">&times;</a>
             </div>
 
         </div>
@@ -125,7 +134,7 @@
                     <img src="img/1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Formulário Spreadsheets.</h5>
-                        <p class="card-text">Formulário de contato Google Spreadsheets.</p>
+                        <p class="card-text">Enviar dados do formulário para o Google Spreadsheets.</p>
                         <a href="https://github.com/PauloBitcoin/Form-Spreadsheet/archive/refs/heads/main.zip"
                             class="btn btn-primary me-1 mb-1">Download</a>
                         <a href="https://youtu.be/EFpSr8Q0dBc" class="btn btn-danger mb-1">Tutorial</a>
@@ -138,7 +147,7 @@
                     <img src="" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Formulário Telegram.</h5>
-                        <p class="card-text">Formulário de contato Telegram.</p>
+                        <p class="card-text">Enviar dados do formulário para o Telegram.</p>
 
                         <a href="https://github.com/PauloBitcoin/form-Telegram/archive/refs/heads/main.zip"
                             class="btn btn-primary me-1 mb-1">Download</a>
