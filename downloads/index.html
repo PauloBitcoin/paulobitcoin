@@ -24,7 +24,7 @@
         padding: 0 5%;
     }
 
-    .faq-header {
+    .down-header {
         background: #303f94;
         background: #303f94;
         background: -webkit-linear-gradient(to right, #303f94, #4b558a);
@@ -43,8 +43,8 @@
     }
 
     h4.subtitle {
-        font-weight: 200;
-        font-size: 1em;
+        font-weight: 400;
+        font-size: 1.1em;
 
     }
 
@@ -154,9 +154,9 @@
 
     <div class="master-box">
 
-        <div class="faq-header">
+        <div class="down-header">
             <h1 class="title d-inline-block mb-2 mt-4 fw-bold"> @PauloBitcoin</h1>
-            <h4 class="subtitle fw-bolder">Página de Downloads</h4>
+            <h4 class="subtitle">Página de Downloads <span class="badge badge-danger">Novo</span></h4>
             <div class="filter-search">
                 <i class="fa fa-search"></i>
                 <input type="text" id="searchItem" placeholder="Buscar...">
@@ -253,13 +253,13 @@
             if (c == "all") c = "";
             // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
             for (i = 0; i < x.length; i++) {
-                faqRemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) faqAddClass(x[i], "show");
+                downRemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) downAddClass(x[i], "show");
             }
         }
 
         // Show filtered elements
-        function faqAddClass(element, name) {
+        function downAddClass(element, name) {
             var i, arr1, arr2;
             arr1 = element.className.split(" ");
             arr2 = name.split(" ");
@@ -271,7 +271,7 @@
         }
 
         // Hide elements that are not selected
-        function faqRemoveClass(element, name) {
+        function downRemoveClass(element, name) {
             var i, arr1, arr2;
             arr1 = element.className.split(" ");
             arr2 = name.split(" ");
