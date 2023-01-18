@@ -48,7 +48,7 @@ function clearStorage() {
 
 $(document).ready(function () {
     $('#userphoto').click(function () {
-        $('#plyr')[0].play();
+        //$('#bitcast')[0].play();
     });
 
     $(function () {
