@@ -11,7 +11,7 @@ $(document).ready(function () {
         Titulo_Da_Pub = 'Conheça!';
         Texto_Da_Pub = '';
         Link_Pub = 'https://www.ttkapp.tk/';
-        Banner = '';
+        Banner = 'images/pub.png';
         Video_Youtube = '';
 
         //videos/pub.mp4
